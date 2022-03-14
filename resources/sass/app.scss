@@ -1,0 +1,66 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+// -------------------------------------------------------
+// Main files
+// -------------------------------------------------------
+
+$breakpoints: (
+        'xs-phone': 320px,
+        'phone': 480px,
+        'tablet': 768px,
+        'desktop': 1024px,
+        'widescreen': 1200px,
+        'xl-widescreen': 1500px
+);
+
+// keywords
+$media-expressions: (
+        'screen': 'screen',
+        'print': 'print',
+        'handheld': 'handheld',
+        'landscape': '(orientation: landscape)',
+        'portrait': '(orientation: portrait)',
+        'retina2x': '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)',
+        'retina3x': '(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)'
+);
+
+// Bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// MDB
+@import "../../../node_modules/mdbootstrap/sass/mdb";
+
+// Font-Awesome
+@import "../../../node_modules/font-awesome/scss/font-awesome";
+
+// Leaflet
+@import "../../../node_modules/leaflet/dist/leaflet";
+
+// include-media
+@import "../../../node_modules/include-media/dist/include-media";
+
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/mixins';
+
+@import 'layouts/common';
+@import 'layouts/header';
+
+@import 'pages/home';
+@import 'pages/first';
+@import 'pages/client_dashboard';
+@import 'pages/provider_dashboard';
+@import 'pages/c_add_tenders';
+@import 'pages/charter';
+@import 'pages/login';
+@import 'pages/signup';
+@import 'pages/c_view_tenders';
+@import 'pages/c_admin_company';
