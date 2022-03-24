@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// 「[ドキュメントルート]/hello」というアドレスに関連付ける処理
+
+Route::get('/', function () {
+    return view('welcome');
+});
+/* add */
+Route::get('/hello', 'HelloController@index');
+
+
+
 
 
 Auth::routes();

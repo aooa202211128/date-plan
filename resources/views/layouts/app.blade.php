@@ -18,7 +18,15 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> ここを3/24に下に書き換えた-->
+
+
+    @if(config('app.env') === 'production')
+    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
+    @else
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    @endif
+
 </head>
 
 <body>
