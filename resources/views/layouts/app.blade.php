@@ -22,9 +22,9 @@
 
 
     @if(config('app.env') === 'production')
-    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/app.scss') }}">
     @else
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.scss') }}">
     @endif
 
 </head>
