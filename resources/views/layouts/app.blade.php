@@ -7,7 +7,7 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
+https://github.com/aooa202211128/date-plan/blob/main/resources/views/layouts/app.blade.php
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
@@ -22,9 +22,9 @@
 
 
     @if(config('app.env') === 'production')
-    <link rel="stylesheet" href="{{ secure_asset('css/app.scss') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
     @else
-    <link rel="stylesheet" href="{{ asset('css/app.scss') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @endif
 
 </head>
