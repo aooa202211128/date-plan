@@ -28,4 +28,4 @@ Route::get('/hello', 'HelloController@index');
 
 Auth::routes();
 
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Https\Controllers\HomeController::class, 'index'])->name('home');
