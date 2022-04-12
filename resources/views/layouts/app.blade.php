@@ -18,6 +18,10 @@ https://github.com/aooa202211128/date-plan/blob/main/resources/views/layouts/app
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 https://github.com/aooa202211128/date-plan/blob/main/resources/views/layouts/app.blade.php
@@ -26,18 +30,14 @@ https://github.com/aooa202211128/date-plan/blob/main/resources/views/layouts/app
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
     <!-- Styles -->
     <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> ここを3/24に下に書き換えた-->
 
 
     @if(config('app.env') === 'production')
-    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @else
-    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @endif
 
 </head>
