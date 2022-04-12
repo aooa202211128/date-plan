@@ -28,10 +28,10 @@ https://github.com/aooa202211128/date-plan/blob/main/resources/views/layouts/app
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset_secure('js/app.js') }}" defer></script>
 
     <!-- Styles -->
-    <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> ここを3/24に下に書き換えた-->
+    <!-- <link href="{{ asset_secure('css/app.css') }}" rel="stylesheet"> ここを3/24に下に書き換えた-->
 
 
     @if(config('app.env') === 'production')
