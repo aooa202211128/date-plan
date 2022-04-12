@@ -11,6 +11,19 @@ https://github.com/aooa202211128/date-plan/blob/main/resources/views/layouts/app
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script><!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+https://github.com/aooa202211128/date-plan/blob/main/resources/views/layouts/app.blade.php
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
@@ -24,7 +37,38 @@ https://github.com/aooa202211128/date-plan/blob/main/resources/views/layouts/app
     @if(config('app.env') === 'production')
     <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
     @else
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
+    @endif
+
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    {{ config('app.name', 'Laravel') }}
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav me-auto">
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- Styles -->
+    <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> ここを3/24に下に書き換えた-->
+
+
+    @if(config('app.env') === 'production')
+    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
+    @else
+    <link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
     @endif
 
 </head>
