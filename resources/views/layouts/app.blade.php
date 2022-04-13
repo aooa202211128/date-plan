@@ -35,9 +35,9 @@ https://github.com/aooa202211128/date-plan/blob/main/resources/views/layouts/app
 
 
     @if(config('app.env') === 'production')
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset_secure('css/app.css') }}">
     @else
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset_secure('css/app.css') }}">
     @endif
 
 </head>
