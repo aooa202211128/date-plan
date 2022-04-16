@@ -29,3 +29,4 @@ Route::get('/hello', 'HelloController@index');
 Auth::routes();
 
 Route::get('/', [App\Https\Controllers\HomeController::class, 'index'])->name('home');
+URL::forceScheme('https');
